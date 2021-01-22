@@ -1,3 +1,5 @@
+//1st problem :
+
 function kilometerToMeter(kilo){
     var meter = kilo * 1000;
 
@@ -12,11 +14,13 @@ function kilometerToMeter(kilo){
     console.log(result);
 
 
-function budgetCalculator(ram, sam, jodu) //ram = clock , sam = mobile , jodu = laptop//
+ //second problem:
+
+function budgetCalculator(titan, nokia, asus) //titan = clock , nokia = mobile , asus = laptop//
 {
-    var clock = 50 * ram;
-    var mobile = 100 * sam;
-    var laptop = 500 * jodu;
+    var clock = 50 * titan;
+    var mobile = 100 * nokia;
+    var laptop = 500 * asus;
 
     var total_price = clock + mobile + laptop;
     return total_price;
@@ -24,7 +28,7 @@ function budgetCalculator(ram, sam, jodu) //ram = clock , sam = mobile , jodu = 
     var result = budgetCalculator(10, 5, 3);
     console.log(result);
 
-
+//third problem :
 
     function hotelCost(number){
     if(number<=10){
@@ -42,3 +46,21 @@ function budgetCalculator(ram, sam, jodu) //ram = clock , sam = mobile , jodu = 
 }   
     var result = hotelCost(25);
     console.log(result);
+
+ //fourth problem :
+
+    function megaFriend(name)
+    {
+        var max_string = name[0].length;
+        var max = name[0];
+        for (var i = 1; i < name.length; i++) {
+            var element = name[i].length;
+            if (element > max_string) {
+                max = name[i];
+                max_string = element;
+        }
+    }
+        return max;
+      }
+var result = megaFriend(["karim", "shuvanon", "avi", "morter max"]);
+console.log(result);
