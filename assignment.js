@@ -25,3 +25,20 @@ function budgetCalculator(ram, sam, jodu) //ram = clock , sam = mobile , jodu = 
     console.log(result);
 
 
+
+    function hotelCost(number){
+    if(number<=10){
+    var cost = number * 100;
+    return cost;
+    }
+    else if(number>10 && number<=20){
+    var cost2 = ((number-10) * 80) + (10 * 100);
+    return cost2;
+    }
+    else{
+    var cost3 = ((number - 20) * 50) + (10 * 80) + (10 * 100);
+    return cost3;
+    }
+}   
+    var result = hotelCost(25);
+    console.log(result);
