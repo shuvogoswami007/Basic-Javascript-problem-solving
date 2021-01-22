@@ -3,7 +3,7 @@
 function kilometerToMeter(kilo){
     var meter = kilo * 1000;
 
-    if(meter < 0){
+    if(kilo < 0){
         console.log("undefined");
     }
     else {
