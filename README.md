@@ -1,1 +1,1 @@
-# Third-Assignment
+project name : Basic Javascript problem solving
